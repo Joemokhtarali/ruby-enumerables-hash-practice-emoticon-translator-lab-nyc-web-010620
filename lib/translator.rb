@@ -17,7 +17,7 @@ def load_library(path)
   return result
 end
 
-def get_japanese_emoticon(path, emoticon)    # hash[:get_emoticon][:]
+def get_japanese_emoticon(path, emoticon)    # hash[:get_emoticon][
    hash = load_library(path)
     hash[:get_emoticon].each do ||
     binding.pry
