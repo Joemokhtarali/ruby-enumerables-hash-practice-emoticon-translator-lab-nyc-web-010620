@@ -5,7 +5,7 @@ require "pry"
 def load_library(path)
   result = {
     :get_meaning => {},      
-    :get_emoticon => {} 
+    :get_emoticon => {} # key english, val jap
   }
   emoticons = YAML.load_file(path)
   emoticons.each do |key, value|  # value[1]  
@@ -17,8 +17,9 @@ def load_library(path)
   return result
 end
 
-def get_japanese_emoticon(path, emoticon)
+def get_japanese_emoticon(path, emoticon)    # hash[:get_emoticon][:]
    hash = load_library(path)
+    hash[:get_emoticon].each do ||
     binding.pry
 end 
 
