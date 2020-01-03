@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(path, emoticon)    # hash[:get_emoticon]["O:)"]
    hash = load_library(path)
     return hash[:get_emoticon][emoticon]
-    binding.pry
+    # binding.pry
 end 
 
 def get_english_meaning
